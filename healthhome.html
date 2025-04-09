@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthcare Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .loader {
+      border: 10px solid #f3f3f3;
+      border-top: 10px solid #00796b;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #004d40;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #00796b;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      margin: 40px auto;
+      width: 80%;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      color: #004d40;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-text {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #004d40;
+    }
+
+    .typed-text {
+      display: inline-block;
+      border-right: 2px solid #004d40;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .hero button {
+      padding: 12px 20px;
+      background: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #004d40;
+      transform: scale(1.1);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin: 60px auto;
+      width: 80%;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .feature-item {
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-item:hover {
+      transform: scale(1.05);
+    }
+
+    .feature-item i {
+      font-size: 40px;
+      color: #00796b;
+    }
+
+    .feature-item h3 {
+      margin: 10px 0 5px;
+    }
+
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="header">
+    <div class="nav">
+      <h2>Healthcare</h2>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1><span class="typed-text">Better Healthcare for Everyone</span></h1>
+      <p>We provide top-notch healthcare services with the best medical professionals to take care of you and your loved ones.</p>
+      <button onclick="location.href='healthhome3page.html'">Get Started</button>
+    </div>
+  </div>
+
+  <div class="features scroll-fade">
+    <div class="feature-item">
+      <i class="fas fa-user-md"></i>
+      <h3>Expert Doctors</h3>
+      <p>Skilled and certified professionals always ready to help.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-hospital"></i>
+      <h3>Modern Facilities</h3>
+      <p>Equipped with latest technology and clean environment.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-heartbeat"></i>
+      <h3>24/7 Emergency</h3>
+      <p>Immediate care and life-saving responses anytime.</p>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-vials"></i>
+      <h3>Lab Services</h3>
+      <p>Quick and accurate diagnostics by certified labs.</p>
+    </div>
+  </div>
+
+  <audio id="welcomeAudio" autoplay>
+    <source src="https://cdn.pixabay.com/download/audio/2021/09/30/audio_a7f5158141.mp3?filename=welcome-voice-2-75747.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Preloader hide
+    window.addEventListener("load", () => {
+      document.querySelector(".preloader").style.display = "none";
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

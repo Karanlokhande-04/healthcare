@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a8d5a8;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #4CAF50;
+        }
+
+        .content {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .service-section {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #f8f8f8;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-section:hover {
+            transform: scale(1.05);
+        }
+
+        .service-section h2 {
+            color: #333;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .service-section p {
+            font-size: 18px;
+            color: gray;
+            line-height: 1.6;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px;
+            background: #4CAF50;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <h2>Healthcare</h2>
+            <div>
+                <a href="healthhome.html">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Our Comprehensive Services</h1>
+        <div class="service-section">
+            <h2>General Checkups</h2>
+            <p>Regular health screenings to ensure early detection of potential health issues.</p>
+        </div>
+        <div class="service-section">
+            <h2>Emergency Care</h2>
+            <p>24/7 emergency support providing immediate medical attention when needed.</p>
+        </div>
+        <div class="service-section">
+            <h2>Mental Health Support</h2>
+            <p>Professional counseling and therapy sessions to support mental well-being.</p>
+        </div>
+        <button class="btn" onclick="redirectToHome()">Back to Home</button>
+    </div>
+
+    <script>
+        function redirectToHome() {
+            window.location.href = "healthhome.html";
+        }
+    </script>
+</body>
+</html>

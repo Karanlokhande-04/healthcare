@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Care</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9fafd;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+    }
+
+    .nav h2 {
+      color: #54D0DA;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #54D0DA;
+    }
+
+    .content {
+      width: 80%;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #222;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      animation: fadeIn 2.5s ease-in-out;
+      text-align: center;
+    }
+
+    .emergency-steps {
+      margin-top: 30px;
+    }
+
+    .step {
+      background: #f1fcfd;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 6px solid #54D0DA;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .step h3 {
+      color: #54D0DA;
+    }
+
+    .step:hover {
+      transform: scale(1.05);
+      background: #e1f7fa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="nav">
+      <h2>Healthcare</h2>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Emergency Care</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Emergency Care: Immediate Assistance When You Need It</h1>
+    <p>Our 24/7 emergency services ensure that you receive the fastest medical response when you need it most.</p>
+    <div class="emergency-steps">
+      <div class="step">
+        <h3>Step 1: Call for Help</h3>
+        <p>Dial our emergency number to get instant assistance.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2: Rapid Response Team</h3>
+        <p>Our ambulance service and medical staff will reach you as quickly as possible.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3: Initial Assessment</h3>
+        <p>Doctors will quickly assess your condition and start immediate treatment.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Advanced Care</h3>
+        <p>Critical patients are stabilized and shifted to ICU if necessary.</p>
+      </div>
+      <div class="step">
+        <h3>Step 5: Recovery & Follow-up</h3>
+        <p>After initial treatment, we ensure complete recovery with continuous monitoring.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Support</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d5f6f8;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #54D0DA;
+    }
+
+    .content {
+      width: 80%;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #333;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .mental-health-steps {
+      margin-top: 30px;
+    }
+
+    .step {
+      background: #eafafd;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 6px solid #54D0DA;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .step:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .step h3 {
+      color: #2b9aa3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="nav">
+      <h2>Healthcare</h2>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Mental Health Support</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Mental Health Support: A Safe Space for Healing</h1>
+    <p>Your mental health is just as important as your physical health. Our professionals are here to support you through your journey.</p>
+
+    <div class="mental-health-steps">
+      <div class="step">
+        <h3>Step 1: Initial Assessment</h3>
+        <p>Speak with a mental health expert to understand your concerns and needs.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2: Personalized Therapy</h3>
+        <p>Receive tailored therapy and counseling for your mental well-being.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3: Support Groups</h3>
+        <p>Join community groups for shared experiences and encouragement.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Ongoing Care</h3>
+        <p>Continued check-ins and support for long-term mental wellness.</p>
+      </div>
+      <div class="step">
+        <h3>Step 5: Self-Care & Resources</h3>
+        <p>Access guided meditation, stress-relief exercises, and more.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
